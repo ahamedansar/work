@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #f9f9f9;
+    color: white;
+}
+
+.logo img {
+    width: 60px;
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #6112f3;
+}
+
+.mee {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 5px 5px;
+}
+
+.main {
+    background-image: url(back.jpg);
+    background-size: cover;
+    height: 400px;
+
+}
+
+.in {
+    padding: 80px;
+
+}
+
+.m {
+    max-width: 280px;
+}
+
+.z {
+    padding: 4px;
+    border: none;
+    margin-top: 5px;
+}
+
+.services {
+  text-align: center;
+  padding: 40px 20px;
+ 
+
+}
+.service-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+ 
+}
+.service {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+   background-color: transparent;
+}
+
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* show on mobile/tablet */
+    color: black;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgb(161, 7, 7);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    border-radius: 8px;
+    padding: 10px;
+    width: 150px;
+   
+  }
+
+  .nav-links a {
+    color: black;
+  }
+
+  /* When checkbox is checked, show menu */
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+}
+
